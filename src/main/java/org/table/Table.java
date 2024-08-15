@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,11 @@ import java.util.List;
 public class Table {
     @Test
     public void Test_Table(){
-        WebDriver driver=new ChromeDriver();
+
+        ChromeOptions chromeOptions=new ChromeOptions();
+        chromeOptions.setAcceptInsecureCerts(true);
+
+        WebDriver driver=new ChromeDriver(chromeOptions=chromeOptions);
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
         List<WebElement> values = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
