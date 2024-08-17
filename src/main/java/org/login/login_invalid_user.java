@@ -7,7 +7,7 @@ public class login_invalid_user {
     void somke_invalidone(){
         System.out.println("in valid one");
     }
-    @Test
+    @Test(groups = {"smoke"})
     void invalidone_two(){
         System.out.println("in valid two");
     }

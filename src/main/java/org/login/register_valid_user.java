@@ -9,7 +9,7 @@ public class register_valid_user {
         System.out.println("i am a setup");
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     void register_valid(){
         System.out.println("i am valid reg user");
     }

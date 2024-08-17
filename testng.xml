@@ -4,6 +4,11 @@
 <suite name="login">
     <!--  TODO [BEFORE TEST]  -->
     <test name="login_tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
         <classes>
             <!--  TODO [BEFORE CLASS]      -->
             <class name="org.login.login_valid_user">
