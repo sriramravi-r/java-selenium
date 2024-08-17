@@ -1,90 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<!--<suite name="All Test Suite">-->
-<!--    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO/Downloads/Automation notes/Selenium/selenium">-->
-<!--        <classes>-->
-<!--            <class name="org.RelativeLocators.RelativeLoc">-->
-<!--                <methods>-->
-<!--                    <include name="aboveLoc"/>-->
-<!--                    <include name="belowLoc"/>-->
-<!--                    <include name="leftLoc"/>-->
-<!--                    <include name="rightLoc"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.Testng.Testng_one">-->
-<!--                <methods>-->
-<!--                    <include name="test_method"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.actions.actionDemo">-->
-<!--                <methods>-->
-<!--                    <include name="action_demo"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.brokenlinks.BrokenLinks">-->
-<!--                <methods>-->
-<!--                    <include name="Test_BrokenLinks"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.calender.Calender">-->
-<!--                <methods>-->
-<!--                    <include name="testCalender"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.jsexecutor.JsExecutor">-->
-<!--                <methods>-->
-<!--                    <include name="Test_jsexecutor"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.new_instance_window_tab.NewWindowTab">-->
-<!--                <methods>-->
-<!--                    <include name="NewWindow"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.scope.scope">-->
-<!--                <methods>-->
-<!--                    <include name="testScope"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.screenshots.Screenshots">-->
-<!--                <methods>-->
-<!--                    <include name="Test_Screenshots"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.streamapi.Stream1">-->
-<!--                <methods>-->
-<!--                    <include name="streamFilter"/>-->
-<!--                    <include name="streamMap"/>-->
-<!--                    <include name="concat"/>-->
-<!--                    <include name="anyMatch"/>-->
-<!--                    <include name="collect"/>-->
-<!--                    <include name="distict"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.streamapi.TableSort">-->
-<!--                <methods>-->
-<!--                    <include name="streamTable"/>-->
-<!--                    <include name="filterTable"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.table.Table">-->
-<!--                <methods>-->
-<!--                    <include name="Test_Table"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="org.window.windowsHandles">-->
-<!--                <methods>-->
-<!--                    <include name="windowHandles"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--</suite>-->
+<!--  TODO [BEFORE SUITE]  -->
 <suite name="login">
-    <test name="loginTest">
+    <!--  TODO [BEFORE TEST]  -->
+    <test name="login_tests">
         <classes>
-            <class name="org.login.login_valid_user"></class>
-            <class name="org.login.login_invalid_user"></class>
+            <!--  TODO [BEFORE CLASS]      -->
+            <class name="org.login.login_valid_user">
+                <!--     TODO [BEFORE METHOD]       -->
+                <!--     TODO [TEST METHOD INSIDE CLASS]    -->
+                <!--     TODO [AFTER METHOD]       -->
+            </class>
+            <!--  TODO [AFTER CLASS]      -->
+            <class name="org.login.login_invalid_user" />
         </classes>
     </test>
+    <!--  TODO [AFTER TEST]  -->
+
+    <!--  TODO [BEFORE TEST]  -->
+    <test name="register_tests">
+        <classes>
+            <class name="org.login.register_valid_user" />
+            <class name="org.login.register_invalid_user" />
+        </classes>
+    </test>
+    <!--  TODO [AFTER TEST]  -->
 </suite>
+<!-- TODO [AFTER SUITE]-->
