@@ -1,5 +1,6 @@
 package org.testngattribute;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class loantestcase {
@@ -7,8 +8,11 @@ public class loantestcase {
     void loan_one(){
         System.out.println("loan one");
     }
-    @Test(timeOut = 4000)
-    void loan_two(){
+    @Parameters({"chrome","edge"})
+    @Test
+    void loan_two(String chrome,String edge){
         System.out.println("loan two");
+        System.out.println(chrome);
+        System.out.println(edge);
     }
 }
