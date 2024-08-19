@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mytest" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="org.Listen.Listen"/>
+    </listeners>
+    <test name="testmy" parallel="classes" thread-count="2">
+        <classes>
+            <class name="org.Listen.Mytest2" />
+            <class name="org.Listen.Mytest2" />
+        </classes>
+    </test>
+    <test name="testmy2">
+        <classes>
+            <class name="org.Listen.Mytest2" />
+        </classes>
+    </test>
+</suite>
